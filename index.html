@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Page Title</title>
+    <title>HTML Examples</title>
+    <style>
+      div {
+        margin: 5px;
+        padding: 5px;
+        font-size: 15px;
+      }
+      button {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: left;
+        border: solid;
+      }
+      input {
+        width: 150px;
+      }
+    </style>
+
   </head>
   <body>
+    <h1>Form example</h1>
+    <form action="result.html" method="GET">
+      <div>
+        <label for="name">Username</label>
+        <input type="text" name="username" id="name" placeholder="username" required>
+      </div>
 
-    <h1>My second Website</h1>
-    <p>My second paragraph.</p>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+      </div>
 
+      <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="1" max="200" step="1">
+      </div>
+
+      <div>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" max="2019-06-01">
+      </div>
+
+      <div>
+        Favorite food
+        <div>
+          <label for="banana">Banana</label>
+          <input type="checkbox" name="banana" id="banana">
+        </div>
+        <div>
+          <label for="apple">Apple</label>
+          <input type="checkbox" name="apple" id="apple">
+        </div>
+
+      </div>
+
+      <div>
+        Gender
+        <div>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female">
+        </div>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password" required>
+      </div>
+
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
   </body>
 </html>
